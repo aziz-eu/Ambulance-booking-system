@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+
+nav{
+    background-color: #fff;
+    height: 23vh;
+    box-shadow: 0 5px 15px rgba(0,0,0,.3);
+
+    }
+.logo h2{
+    text-align: center;
+    color: hsl(205, 78%, 60%);
+    font-size: 52px;
+    padding: 1rem 0 0 0;
+    font-family:monospace;
+    letter-spacing: .1rem;
+}
+.navlinks{
+    margin: 1rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: .1rem;
+    text-align: center;
+    text-align: end;
+
+}
+.navlinks a{
+    padding: 0 1rem ;
+    color: hsl(211, 39%, 23%);
+    font-weight: 700;
+    font-size: 18px;
+    transition: all 0.4s;
+    text-decoration: none;
+}
+.navlinks a:hover{
+    color: red;
+}
+
+
+.heading-text {
+    margin: 250px 20px 0 0;
+
+}
+footer{
+    height: 10vh;
+    background-color: #1a1a1a;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    max-width: 99vw;
+
+}
+
+
+.heading-text{
+    color: white;
+  
+}
+.heading-content{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+
+
+.banner{
+    background-image: url("image/ambulancebanner.jpg");
+    min-height: 80vh;
+    margin-top: 1rem;
+    background-size: 98vw;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: right;
+    align-items:flex-start;
+   
+    
+}
