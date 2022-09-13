@@ -45,31 +45,31 @@
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="flush-headingOne">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseQusOne" aria-expanded="false" aria-controls="flush-collapseQusOne">
-                      Question #1
+                    Can I hire your ambulance service by online booking?
                     </button>
                   </h2>
                   <div id="flush-collapseQusOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#Question">
-                    <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quaerat perferendis natus.</div>
+                    <div class="accordion-body">Yes! You can definitely hire our ambulance via online booking. After confirming your booking. we will contact you in the next 5 minutes.</div>
                   </div>
                 </div>
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="flush-headingQTwo">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-headingQusTwo" aria-expanded="false" aria-controls="flush-headingQusTwo">
-                      Question #2
+                    How many seats available in general ambulance services?
                     </button>
                   </h2>
                   <div id="flush-headingQusTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingQTwo" data-bs-parent="#Question">
-                    <div class="accordion-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore praesentium delectus sed ullam mollitia molestias illum rem, culpa voluptas quasi omnis, ipsa reiciendis deserunt beatae. Officiis a ipsam vitae, eveniet nostrum alias!</div>
+                    <div class="accordion-body">In a Hiace ambulance, there are 6 seats available. So the patient's relative can go on this ambulance.</div>
                   </div>
                 </div>
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="flush-headingQThree">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseQusThree" aria-expanded="false" aria-controls="flush-collapseQusThree">
-                      Question #3
+                    Have any extra charge to hire your ambulance services?
                     </button>
                   </h2>
                   <div id="flush-collapseQusThree" class="accordion-collapse collapse" aria-labelledby="flush-headingQThree" data-bs-parent="#Question">
-                    <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nam laudantium eaque suscipit nesciunt? Odit incidunt quae dolores. Ad, eveniet quaerat.</div>
+                    <div class="accordion-body">No! There is no extra charge to hire our ambulance service. Such as bridge toll, ferry fare, etc.</div>
                   </div>
                 </div>
               </div>
@@ -79,31 +79,33 @@
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="flush-headingOne">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                      Question #1
+                    Is there available Doctor/nurse on ICU ambulance?
                     </button>
                   </h2>
                   <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quaerat perferendis natus.</div>
+                    <div class="accordion-body">Yes! We have a special experienced doctor & technician. Basically, we serve the doctor & technician for an ICU ambulance or Air ambulance service.</div>
                   </div>
                 </div>
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="flush-headingTwo">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                      Question #2
+                    What equipment is available on an ambulance?
                     </button>
                   </h2>
                   <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore praesentium delectus sed ullam mollitia molestias illum rem, culpa voluptas quasi omnis, ipsa reiciendis deserunt beatae. Officiis a ipsam vitae, eveniet nostrum alias!</div>
+                    <div class="accordion-body">In our ambulance, we provide all the necessary medical equipment. Such as First aid box, Oxygen Cylinder, Mask, Stature, Bandage, Wheelchair, etc. We always to try to give you better ambulance services.</div>
                   </div>
                 </div>
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="flush-headingThree">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                      Question #3
+                    How many seats available in freezing ambulance?
                     </button>
                   </h2>
                   <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nam laudantium eaque suscipit nesciunt? Odit incidunt quae dolores. Ad, eveniet quaerat.</div>
+                    <div class="accordion-body">A freezing ambulance is a dead body carrier vehicle. In freezing ambulance has 2 seats available besides the driver. If you have more people. Then you can hire our private Hiace car.
+
+</div>
                   </div>
                 </div>
               </div>

@@ -3,22 +3,29 @@ include_once 'includes/function.php';
 include_once 'includes/session.php';
 include_once 'config/db.php';
 guard('admin.php', 'You must login first');
+// echo (getUserSession('password'));
 
 
 if (isset($_POST['edit_admin'])) {
 
-    $current_password =  trim($_POST['current_password']);
-    $new_password =  trim($_POST['new_password']);
-    $new_password_repeat =  trim($_POST['new_password_repeat']);
+    $current_password = md5(trim($_POST['current_password']));
+    $new_password = (trim($_POST['new_password']));
+    $new_password_repeat = (trim($_POST['new_password_repeat']));
 
-    if ($current_password == getUserSession('password')) {
+    if ($new_password != NULL) {
+        $new_password = md5(trim($_POST['new_password']));
+        $new_password_repeat =  md5(trim($_POST['new_password_repeat']));
+    }
+
+
+    if ($current_password == (getUserSession('password'))) {
 
         if ($new_password == NULL && $new_password == NULL) {
 
-            $name =  trim($_POST['admin_name']);
-            $email =  trim($_POST['email']);
-            $phone =  trim($_POST['phone']);
-            $username =  trim($_POST['user_name']);
+            $name =  mysqli_real_escape_string($con, trim($_POST['admin_name']));
+            $email =  mysqli_real_escape_string($con, trim($_POST['email']));
+            $phone =  mysqli_real_escape_string($con, trim($_POST['phone']));
+            $username =  mysqli_real_escape_string($con, trim($_POST['user_name']));
 
 
             $sql = "UPDATE `admin` SET `name`='$name', `email` = '$email', `phone` = '$phone', `username` = '$username'";
@@ -31,13 +38,12 @@ if (isset($_POST['edit_admin'])) {
             } else {
                 echo "Error: " . $sql . "<br>" . $con->error;
             }
-        }
-         else if ($new_password == $new_password_repeat) {
+        } else if ($new_password == $new_password_repeat) {
 
-            $name =  trim($_POST['admin_name']);
-            $email =  trim($_POST['email']);
-            $phone =  trim($_POST['phone']);
-            $username =  trim($_POST['user_name']);
+            $name =  mysqli_real_escape_string($con, trim($_POST['admin_name']));
+            $email =  mysqli_real_escape_string($con, trim($_POST['email']));
+            $phone =  mysqli_real_escape_string($con, trim($_POST['phone']));
+            $username =  mysqli_real_escape_string($con, trim($_POST['user_name']));
 
 
             $sql = "UPDATE `admin` SET `name`='$name', `email` = '$email', `phone` = '$phone', `username` = '$username', `password` = '$new_password'";
@@ -50,17 +56,16 @@ if (isset($_POST['edit_admin'])) {
             } else {
                 echo "Error: " . $sql . "<br>" . $con->error;
             }
-        }
-         else if ($new_password != $new_password_repeat) {
+        } else if ($new_password != $new_password_repeat) {
 
-            redirect('admin_profile.php','new password and repeat password not matched', 'danger');
+            redirect('admin_profile.php', 'new password and repeat password not matched', 'danger');
+        } else {
+            redirect('admin_profile.php', 'something want wrong', 'danger');
         }
-        else{
-            redirect('admin_profile.php','something want wrong', 'danger');
-        }
-        
+    } else if ($current_password == NULL) {
+        redirect('admin_profile.php', 'Please Provide your Current Password', 'danger');
     } else {
-        redirect('admin_profile.php', 'You Don\'t Provide your Current Password', 'danger');
+        redirect('admin_profile.php', 'You Didn\'t Provide your Correct Password', 'danger');
     }
 }
 
@@ -137,25 +142,25 @@ if (isset($_POST['edit_admin'])) {
                         <div class="modal-body">
                             <form action="admin_profile.php" method="POST">
                                 <label for="name" class="form-label">Name</label>
-                                <input type="text" name="admin_name" class="form-control" id="name" value="<?php echo getUserSession('name') ?>">
-                                <label for="email" class="form-label">E-mail Address</label>
-                                <input type="email" name='email' class="form-control" id="name" value="<?php echo getUserSession('email') ?>">
+                                <input type="text" require name="admin_name" class="form-control" id="name" value="<?php echo getUserSession('name') ?>">
+                                <label for="email"  class="form-label">E-mail Address</label>
+                                <input type="email" require name='email' class="form-control" id="name" value="<?php echo getUserSession('email') ?>">
                                 <label for="phone" class="form-label">Phone</label>
-                                <input type="phone" name='phone' class="form-control" id="name" value="<?php echo getUserSession('phone') ?>">
+                                <input type="phone" require name='phone' class="form-control" id="name" value="<?php echo getUserSession('phone') ?>">
 
                                 <label for="username" class="form-label">Username</label>
-                                <input type="text" name="user_name" class="form-control" id="username" value="<?php echo getUserSession('username') ?>">
+                                <input type="text" require name="user_name" class="form-control" id="username" value="<?php echo getUserSession('username') ?>">
 
                                 <label for="New Password" class="form-label">New Password</label>
-                                <input type="text" name="new_password" class="form-control" id="New Password" placeholder="If want to change">
+                                <input type="password" name="new_password" class="form-control" id="New Password" placeholder="If want to change">
                                 <label for="New Password" class="form-label">Repeat New Password</label>
-                                <input type="text" name="new_password_repeat" class="form-control" id="New Password" placeholder="Repeat new Password">
-                                <label for="password" class="form-label">Your Current Password</label>
-                                <input type="password" class="form-control" name="current_password" id="password">
+                                <input type="password" name="new_password_repeat" class="form-control" id="New Password" placeholder="Repeat new Password">
+                                <label for="password" class="form-label" >Your Current Password</label>
+                                <input type="password" class="form-control" name="current_password" id="password" placeholder="Enter your current password to save change">
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <input type="submit" value="Save Change" class="btn" name="edit_admin">
+                            <input type="submit" value="Save Changes" class="btn btn-primary" name="edit_admin">
                         </div>
                         </form>
 
