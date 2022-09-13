@@ -8,6 +8,9 @@ html{
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
+.container {
+    min-height: 70vh;
+}
 a{
     text-decoration: none;
 }
@@ -95,4 +98,12 @@ main{
     align-items:flex-start;
    
     
+}
+
+label{
+    padding: .4rem 0;
+    font-weight: bolder;
+}
+.logoutBtn{
+    color: white;
 }

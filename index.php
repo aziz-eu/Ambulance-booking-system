@@ -23,12 +23,12 @@
           </div>
           <div class="navitem">
             <ul class="navlinks">
-              <li><a href="./index.html">Home</a></li>
-              <li><a href="./services.html">Our Services</a></li>
-              <li><a href="./booking.html">Booking Ambulance</a></li>
-              <li><a href="./about.html">About us</a></li>
-              <li><a href="./contact.html">Contact us</a></li>
-              <li><a href="./faq.html">FAQs</a></li>
+              <li><a href="./index.php">Home</a></li>
+              <li><a href="./services.php">Our Services</a></li>
+              <li><a href="./booking.php">Booking Ambulance</a></li>
+              <li><a href="./about.php">About us</a></li>
+              <li><a href="./contact.php">Contact us</a></li>
+              <li><a href="./faq.php">FAQs</a></li>
             </ul>
           </div>
         </div>
@@ -83,34 +83,6 @@
             </div>
           </div>
         </div>
-        <div class="text-center my-5">
-            <h3>Our Service</h3>
-            <h6>The types of Ambulance we mainly provide</h6>
-          </div>
-          <div class="service my-3 text-center">
-            <div class="row">
-              <div class="col-4 p-2">
-                  <div class="mb-4">
-                      <img src="image/ambulance1.png" alt="" width="100px">
-                  </div>
-                
-                <h3>General Ambulance</h3>
-              </div>
-              <div class="col-4 p-2">
-                  <div class="mb-4">
-                      <img src="image/icu.png" alt="" width="100px">
-                  </div>
-                <h3>ICU Ambulance</h3>
-              </div>
-              <div class="col-4 p-2">
-                  <div class="mb-4">
-                      <img src="image/ambulance (4).png" alt="" width="100px">
-                  </div>
-                  
-                <h3>Frezer Ambulance</h3>
-              </div>
-            </div>
-          </div>
         <div class="text-center mt-5 mb-3">
           <h3>Our Mission - What we do</h3>
           <h6>We offer all kind of ambulance service</h6>
